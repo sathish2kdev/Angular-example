@@ -1,0 +1,15 @@
+.rtask-input {
+    background: #FFFFFF;
+    border: 1px solid #D6D3EC;
+    box-sizing: border-box;
+    border-radius: 8px;
+    width: 225px;
+    height: 38px;
+    font-family: PublicSans-Regular;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 10px;
+    line-height: 140%;
+    letter-spacing: 0.02em;
+    color: #6d6d70;
+}

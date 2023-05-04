@@ -1,0 +1,19 @@
+<div>
+    <Form [formGroup]="cutomerSaveForm" (ngSubmit)="SaveCustomerDetails()">
+        <label>customer name</label>
+        <input type="text" formControlName="customerName" />
+        <label>Customer Location</label>
+        <input type="text" formControlName="customerLocation" />
+        <label>Customer Salary</label>
+        <input type="text" formControlName="customerSalary" />
+        <label>Customer Number</label>
+        <input type="text" formControlName="customerNumber" />
+        <button type="submit">Save</button>
+    </Form>
+</div>
+<div>
+<div  *ngFor ="let value of showData$ | async" >
+    <label>{{ value.customerName }}</label>
+</div>
+   
+</div>

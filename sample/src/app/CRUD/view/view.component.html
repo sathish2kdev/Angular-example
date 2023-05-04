@@ -1,0 +1,42 @@
+<h2>Saved Data</h2>
+<table>
+    <thead>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Number</th>
+        <th>Company</th>
+        <th>Position</th>
+    </thead>
+    <tbody>
+        <tr>
+            <div *ngIf="(userData$ | async)">
+                <td>{{(userData$ | async).name}}</td>
+                <td>{{(userData$ | async).age}}</td>
+                <td>{{(userData$ | async).number}}</td>
+                <td>{{(userData$ | async).company}}</td>
+                <td>{{(userData$ | async).postion}}</td>
+            </div>
+        </tr>
+    </tbody>
+</table>
+<h2>List of Data</h2>
+<table>
+    <thead>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Number</th>
+        <th>Company</th>
+        <th>Position</th>
+    </thead>
+    <tbody>
+
+        <tr *ngFor="let data of userDataManual$ | async">
+            <td>{{data.name}}</td>
+            <td>{{data.age}}</td>
+            <td>{{data.number}}</td>
+            <td>{{data.company}}</td>
+            <td>{{data.postion}}</td>
+        </tr>
+
+    </tbody>
+</table>

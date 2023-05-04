@@ -1,0 +1,40 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6 col-md-6 col-6">
+            <form [formGroup]="user" (ngSubmit)="submit()">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3">
+                        <label> Name </label>
+                        <input type="text" class="rtask" formControlName="name">
+                    </div>
+                    <div class="col-lg-3 col-md-3">
+                        <label> Age </label>
+                        <input type="text" formControlName="age">
+                    </div>
+                    <div class="col-lg-3 col-md-3">
+                        <label> Number </label>
+                        <input type="text" formControlName="number">
+                    </div>
+                    <div class="col-lg-3 col-md-3">
+                        <label> Company </label>
+                        <input type="text" formControlName="company">
+                    </div>
+                    <div class="col-lg-3 col-md-3">
+                        <label> postion </label>
+                        <input type="text" formControlName="postion">
+                    </div>
+                    <div class="col-lg-12 col-md-12 col-12">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                    <div [routerLink]="['/view']">ss</div>
+                </div>
+
+            </form>
+        </div>&nbsp;&nbsp;
+        <div class="col-lg-12 col-md-4">
+            <app-view></app-view>
+        </div>
+
+
+    </div>
+</div>

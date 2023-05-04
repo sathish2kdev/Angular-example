@@ -1,0 +1,6 @@
+<input type="text" [(ngModel)]="value">
+<button class="btn btn-dark" (click)="addData()">Add Data</button>
+
+<h3>{{(name | async)}}</h3>
+
+<button class="btn btn-danger" (click)="changeName()">change Name</button>
